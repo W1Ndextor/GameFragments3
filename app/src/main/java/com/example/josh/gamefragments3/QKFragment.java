@@ -12,21 +12,21 @@ import android.widget.Button;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class QLFragment extends Fragment {
+public class QKFragment extends Fragment {
 
-    Button bnB1;
-    boolean statusUno;
+    Button bnB3;
+    boolean statusTrois;
 
-    public QLFragment() {
+    public QKFragment() {
         // Required empty public constructor
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                            Bundle savedInstanceState) {
-         //Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ql_layout, container, false);
+                             Bundle savedInstanceState) {
+        //Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_qk_layout, container, false);
     }
 
     @Override
@@ -34,11 +34,11 @@ public class QLFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
 
-        bnB1 = (Button) getView().findViewById(R.id.bnB1);
+        bnB3 = (Button) getView().findViewById(R.id.bnB3);
 
 
 
-        bnB1.setOnClickListener(new View.OnClickListener() {
+        bnB3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -46,15 +46,15 @@ public class QLFragment extends Fragment {
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
 
-                if (statusUno = true) {
+                if (statusTrois = true) {
 
-                    LinkFragment lFrag2 = new LinkFragment();
-                    fragmentTransaction.add(R.id.fragment_container, lFrag2);
+                    KirbyFragment kFrag2 = new KirbyFragment();
+                    fragmentTransaction.add(R.id.fragment_container, kFrag2);
                     fragmentTransaction.addToBackStack(null);
                     //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
                     //bn1.setText("Link");
-                    statusUno = true;
+                    statusTrois = true;
 
                 }
 

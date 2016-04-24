@@ -1,16 +1,15 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
-    tools:context="com.example.josh.gameFragments3.MarioFragment">
-
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.gamefragments3.QKFragment">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mario and luigi"
+        android:text="first on NES"
         android:textAppearance="?android:textAppearanceLarge"
-        android:background="#73f447"
+        android:background="#ffd000"
         android:textColor="#1722a5"
         android:gravity="center"
         android:height="120dp" />
@@ -19,7 +18,7 @@
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:id="@+id/bnB2"
+        android:id="@+id/bnB3"
         android:gravity="center" />
 
 </FrameLayout>

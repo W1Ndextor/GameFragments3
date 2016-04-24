@@ -15,4 +15,11 @@
         android:textColor="#ff006a"
         android:background="#ff81f7" />
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        android:id="@+id/bnT3"
+        android:gravity="center" />
+
 </FrameLayout>
