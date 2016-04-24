@@ -8,18 +8,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mario is Red"
+        android:text="Mario and luigi"
         android:textAppearance="?android:textAppearanceLarge"
-        android:background="#ed0b0b"
+        android:background="#73f447"
         android:textColor="#1722a5"
         android:gravity="center"
         android:height="120dp" />
 
-
-    <Button
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:text="Trivia"
-        android:id="@+id/bnT2"
-        android:gravity="center" />
 </FrameLayout>

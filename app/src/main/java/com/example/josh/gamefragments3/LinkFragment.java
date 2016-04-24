@@ -37,48 +37,6 @@ public class LinkFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-
-
-        //bnT1 = (Button) getView().findViewById(R.id.bnT1);
-
-       /* bnT1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-                QLFragment qlFrag1 = new QLFragment();
-                FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-                transaction.add(R.id.fragment_container, qlFrag1).commit();
-
-                android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
-                android.support.v4.app.FragmentTransaction fragmentTransaction = getChildFragmentManager().beginTransaction();
-                fragmentTransaction.add(R.id.fragment_container, qlFrag1).commit();
-
-
-                //QLFragment qlFrag1 = new QLFragment();
-                //FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-                //transaction.add(R.id.child_fragment, fragmentC ).commit();
-                if (statusUno = true) {
-
-                    // QLFragment qlFrag1 = new QLFragment();
-                    getFragmentManager().beginTransaction()
-                            .replace(((ViewGroup) getView().getParent()).getId(), qlFrag1)
-                            .addToBackStack(null)
-                            .commit();
-                    fragmentTransaction.addToBackStack(null);
-                    fragmentTransaction.add(R.id.fragment_container, qlFrag1);
-                    fragmentTransaction.commit();
-                    bnT1.setText("Link");
-                    statusUno = true;
-
-                }
-
-
-            }
-        });*/
-
-
-
     }
 
     @Override
@@ -88,9 +46,7 @@ public class LinkFragment extends Fragment {
 
         bnT1 = (Button) getView().findViewById(R.id.bnT1);
 
-        //QLFragment qlFrag1 = new QLFragment();
-       // FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
-       // transaction.add(R.id.fragment_container, qlFrag1).commit();
+
 
         bnT1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,13 +55,6 @@ public class LinkFragment extends Fragment {
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-
-                ///@Override
-                ///public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                ///                        Bundle savedInstanceState) {
-                // Inflate the layout for this fragment
-                ///  return inflater.inflate(R.layout.fragment_ql_layout, container, false);
-                /// }
 
                 if (statusUno = true) {
 

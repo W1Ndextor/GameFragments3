@@ -15,4 +15,11 @@
         android:gravity="center"
         android:height="120dp" />
 
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:id="@+id/bnB1"
+        android:gravity="center" />
+
 </FrameLayout>
