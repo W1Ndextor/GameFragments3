@@ -1,25 +1,35 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
-    tools:context="com.example.josh.gameFragments3.LinkFragment">
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.gamefragments3.MainActivity"
+    android:background="#6247ce">
+    >
 
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Link is the hero of time"
+        android:layout_height="350dp"
+        android:text="Link wields the Master Sword!"
         android:textAppearance="?android:textAppearanceLarge"
-        android:background="#f700ff"
-        android:textColor="#1722a5"
         android:gravity="center"
-        android:height="120dp" />
+        android:height="120dp"
+        android:textColor="#d5d5d5"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
 
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:text="Back"
+        android:text="Trivia"
         android:id="@+id/bnB1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_x="133dp"
+        android:layout_y="231dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
-</FrameLayout>
+</RelativeLayout>

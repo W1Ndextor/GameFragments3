@@ -1,26 +1,35 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
-    tools:context="com.example.josh.gamefragments3.MainActivity">
+    android:layout_height="match_parent"
+    tools:context="com.example.josh.gamefragments3.MainActivity"
+    android:background="#22bf02">
+    >
 
 
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Link is Green"
+        android:layout_height="350dp"
+        android:text="Link is green."
         android:textAppearance="?android:textAppearanceLarge"
-        android:background="#0b9e00"
-        android:textColor="#ffe500"
         android:gravity="center"
-        android:height="120dp" />
-
+        android:height="120dp"
+        android:textColor="#fff703"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView" />
 
     <Button
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Trivia"
         android:id="@+id/bnT1"
-        android:gravity="center" />
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_x="133dp"
+        android:layout_y="231dp"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
-</FrameLayout>
+</RelativeLayout>

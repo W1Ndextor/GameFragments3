@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.josh.gamefragments3.MainActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#5b57c2">
 
     <TableRow
         android:layout_width="match_parent"
@@ -50,10 +51,9 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="300dp"
         android:id="@+id/fragment_container"
-        android:layout_column="2"
-        android:background="#d6fffa">
+        android:layout_column="2">
 
     </RelativeLayout>
 
