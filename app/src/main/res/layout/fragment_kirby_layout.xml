@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context="com.example.josh.gamefragments3.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kirby is pink."
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"
+        android:height="120dp"
+        android:textColor="#ff006a"
+        android:background="#ff81f7" />
+
+</FrameLayout>

@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context="com.example.josh.gamefragments3.MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Link is Green"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:background="#0b9e00"
+        android:textColor="#ffe500"
+        android:gravity="center"
+        android:height="120dp" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Trivia"
+        android:id="@+id/bnT1"
+        android:gravity="center" />
+
+</FrameLayout>

@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    tools:context="com.example.josh.gameFragments3.LinkFragment">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Link is the hero of time"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:background="#f700ff"
+        android:textColor="#1722a5"
+        android:gravity="center"
+        android:height="120dp" />
+
+</FrameLayout>
