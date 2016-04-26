@@ -15,7 +15,6 @@ import android.widget.Button;
 public class QKFragment extends Fragment {
 
     Button bnB3;
-   // boolean statusTrois;
 
     public QKFragment() {
         // Required empty public constructor
@@ -33,10 +32,7 @@ public class QKFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         bnB3 = (Button) getView().findViewById(R.id.bnB3);
-
-
 
         bnB3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,19 +41,10 @@ public class QKFragment extends Fragment {
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-
-     //           if (statusTrois = true) {
-
-                    KirbyFragment kFrag2 = new KirbyFragment();
-                    fragmentTransaction.add(R.id.fragment_container, kFrag2);
-                    fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
-                    fragmentTransaction.commit();
-                    //bn1.setText("Link");
-//                    statusTrois = true;
-
-//                }
-
+                KirbyFragment kFrag2 = new KirbyFragment();
+                fragmentTransaction.add(R.id.fragment_container, kFrag2);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
 
             }
         });

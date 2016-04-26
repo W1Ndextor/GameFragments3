@@ -16,7 +16,7 @@ import android.widget.Button;
 public class KirbyFragment extends Fragment {
 
     Button bnT3;
-   // boolean statusTrois = false;
+
 
     public KirbyFragment() {
         // Required empty public constructor
@@ -28,7 +28,6 @@ public class KirbyFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = (View) inflater.inflate(R.layout.fragment_kirby_layout,
                 container, false);
-
 
         return view ;
     }
@@ -46,8 +45,6 @@ public class KirbyFragment extends Fragment {
 
         bnT3 = (Button) getView().findViewById(R.id.bnT3);
 
-
-
         bnT3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -56,18 +53,10 @@ public class KirbyFragment extends Fragment {
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
 
-     //           if (statusTrois = true) {
-
                     QKFragment qkFrag1 = new QKFragment();
                     fragmentTransaction.add(R.id.fragment_container, qkFrag1);
                     fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
-                    //bn1.setText("Link");
-       //             statusTrois = true;
-
-         //       }
-
 
             }
         });

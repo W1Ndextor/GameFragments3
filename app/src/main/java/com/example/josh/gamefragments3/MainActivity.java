@@ -7,10 +7,6 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-   // boolean status1 = false;
-    //boolean status2 = false;
- //   boolean status3 = false;
-
     Button bn1;
     Button bn2;
     Button bn3;
@@ -31,18 +27,11 @@ public class MainActivity extends AppCompatActivity {
                 android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-                //if(status1=true){
 
                     MarioFragment mFrag1 = new MarioFragment();
                     fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
-                    //bn1.setText("Link");
-                  //  status1 = true;
-
-//                }
-
 
             }
         });
@@ -54,18 +43,11 @@ public class MainActivity extends AppCompatActivity {
                 android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-  //              if(status2=true){
 
                     LinkFragment lFrag1 = new LinkFragment();
                     fragmentTransaction.add(R.id.fragment_container, lFrag1);
                     fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
-                    //bn1.setText("Link");
-//                    status1 = true;
-
-  //              }
-
 
             }
         });
@@ -78,18 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 android.support.v4.app.FragmentManager fragmentManager = getSupportFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-    //            if(status3=true){
 
                     KirbyFragment kFrag1 = new KirbyFragment();
                     fragmentTransaction.add(R.id.fragment_container, kFrag1);
                     fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
-                    //bn1.setText("Link");
-      //              status1 = true;
-
- //               }
-
 
             }
         });

@@ -15,7 +15,6 @@ import android.widget.Button;
 public class QLFragment extends Fragment {
 
     Button bnB1;
-   // boolean statusUno;
 
     public QLFragment() {
         // Required empty public constructor
@@ -33,10 +32,7 @@ public class QLFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         bnB1 = (Button) getView().findViewById(R.id.bnB1);
-
-
 
         bnB1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,19 +41,10 @@ public class QLFragment extends Fragment {
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-
-//                if (statusUno = true) {
-
                     LinkFragment lFrag2 = new LinkFragment();
                     fragmentTransaction.add(R.id.fragment_container, lFrag2);
                     fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
-                    //bn1.setText("Link");
-  //                  statusUno = true;
-
-    //            }
-
 
             }
         });

@@ -16,7 +16,6 @@ import android.widget.Button;
 public class MarioFragment extends Fragment {
 
     Button bnT2;
-    //boolean statusDos = false;
 
     public MarioFragment() {
         // Required empty public constructor
@@ -28,7 +27,6 @@ public class MarioFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = (View) inflater.inflate(R.layout.fragment_mario_layout,
                 container, false);
-
 
         return view ;
     }
@@ -43,10 +41,7 @@ public class MarioFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         bnT2 = (Button) getView().findViewById(R.id.bnT2);
-
-
 
         bnT2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -55,19 +50,11 @@ public class MarioFragment extends Fragment {
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-
-      //          if (statusDos = true) {
-
                     QMFragment qmFrag1 = new QMFragment();
                     fragmentTransaction.add(R.id.fragment_container, qmFrag1);
                     fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
+
                     fragmentTransaction.commit();
-                    //bn1.setText("Link");
-//                    statusDos = true;
-
-  //              }
-
 
             }
         });

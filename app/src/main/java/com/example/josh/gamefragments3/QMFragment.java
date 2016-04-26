@@ -15,12 +15,10 @@ import android.widget.Button;
 public class QMFragment extends Fragment {
 
     Button bnB2;
-    //boolean statusDeux = false;
 
     public QMFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -33,10 +31,7 @@ public class QMFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-
         bnB2 = (Button) getView().findViewById(R.id.bnB2);
-
-
 
         bnB2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,19 +40,10 @@ public class QMFragment extends Fragment {
                 android.support.v4.app.FragmentManager fragmentManager = getFragmentManager();
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
-
-//                if (statusDeux = true) {
-
-                    MarioFragment mFrag2 = new MarioFragment();
-                    fragmentTransaction.add(R.id.fragment_container, mFrag2);
-                    fragmentTransaction.addToBackStack(null);
-                    //fragmentTransaction.add(R.id.fragment_container, mFrag1);
-                    fragmentTransaction.commit();
-                    //bn1.setText("Link");
-  //                  statusDeux = true;
-
- //               }
-
+                MarioFragment mFrag2 = new MarioFragment();
+                fragmentTransaction.add(R.id.fragment_container, mFrag2);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
 
             }
         });
