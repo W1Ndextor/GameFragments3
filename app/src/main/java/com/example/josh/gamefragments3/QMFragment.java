@@ -15,7 +15,7 @@ import android.widget.Button;
 public class QMFragment extends Fragment {
 
     Button bnB2;
-    boolean statusDeux = false;
+    //boolean statusDeux = false;
 
     public QMFragment() {
         // Required empty public constructor
@@ -46,7 +46,7 @@ public class QMFragment extends Fragment {
                 android.support.v4.app.FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
 
-                if (statusDeux = true) {
+//                if (statusDeux = true) {
 
                     MarioFragment mFrag2 = new MarioFragment();
                     fragmentTransaction.add(R.id.fragment_container, mFrag2);
@@ -54,9 +54,9 @@ public class QMFragment extends Fragment {
                     //fragmentTransaction.add(R.id.fragment_container, mFrag1);
                     fragmentTransaction.commit();
                     //bn1.setText("Link");
-                    statusDeux = true;
+  //                  statusDeux = true;
 
-                }
+ //               }
 
 
             }
